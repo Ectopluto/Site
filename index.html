@@ -1,4 +1,3 @@
-
 <!DOCTYPE html> 
 <html>
 <head lang="en">
@@ -6,36 +5,79 @@
     <title>OH U FOUND ME!</title>
     <style type="text/css">
 body {
-font-family: sans-serif;
-display:    flex;
-align-items: center;
-justify-content: center;
-background: black;
-
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    height: 100vh;
+    margin: 0;
 }
 
 img {
-width: 50%;
-height: auto;
-align-content: center;
-position:   relative;
-
-}       
-
-div {
-position: absolute;
-width: 50%;
-height: auto;
-a
-
-
+    width: 50%;
+    height: auto;
+    cursor: pointer;
 }
-
     </style>
-    
 </head>
 <body>
-        <img src="technecal.png" alt="Ecto's in progress" width="100">
-
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="technecal.png" alt="Ecto's in progress" id="center-img" title="Click me :3">
+        <p style="color: white; text-align: center;">
+            This is a work in progress, but I wanted to share it with you anyway!
+        </p>
+        <p style="color: white; text-align: center;">
+             Find all my socials below:
+        </p>
+        <ul>
+            <li>
+            <a href="https://www.instagram.com/ectopluto/" target="_blank" rel="noopener">
+                <span style="color: #1da1f2;">Instagram</span>
+            </a>
+            </li>
+            <li>
+            <a href="https://www.twitch.tv/ectopluto" target="_blank" rel="noopener">
+                <span style="color: #1da1f2;">Twitch</span>
+            </a>
+            </li>
+            <li>
+            <a href="https://www.youtube.com/@EctoPluto" target="_blank" rel="noopener">
+                <span style="color: #1da1f2;">YouTube</span>
+            </a>
+            </li>
+            <li>
+            <a href="https://bsky.app/profile/ectopluto.bsky.social" target="_blank" rel="noopener">
+                <span style="color: #1da1f2;">BlueSky</span>
+            </a>
+            </li>
+            <li>
+            <a href="https://discord.gg/TsDrMrQwRg" target="_blank" rel="noopener">
+                <span style="color: #084d77;">Discord server</span>
+            </a>
+            </li>
+             <li>
+            <a href="https://toyhou.se/ECTOpluto" target="_blank" rel="noopener">
+                <span style="color: #ffffff;">ToyHouse</span>
+            </a>
+            </li>
+             <li>
+            <a href="https://artfight.net/~ectopluto" target="_blank" rel="noopener">
+                <span style="color: #ffffff;">Art Fight</span>
+            </a>
+            </li>
+        </ul>
+    </div>
+    <audio id="sound" src="deltarune.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        const img = document.getElementById('center-img');
+        const audio = document.getElementById('sound');
+        img.addEventListener('click', () => {
+            audio.currentTime = 0;
+            audio.play();
+        });
+    </script>
 </body>
 </html>
